@@ -1,0 +1,116 @@
+/* Page Wrapper */
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f8f8f8;
+    padding: 30px;
+    margin: 30px;
+}
+
+/* Main Container */
+.contact-container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #b0b0b0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: black;
+    color: white;
+    padding: 10px; /* Keep the original padding for vertical spacing */
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    font-size: 16px;
+    height: 36px; /* Added height to match input fields */
+    display: flex; /* Use flexbox to center text vertically */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+/* Added Text Box Section */
+.text-box-section {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box-section p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+/* Social Media Icons Container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Individual Social Icon Style */
+.social-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Rounded corners */
+    color: white;
+    font-size: 24px; /* Adjust icon size */
+    transition: transform 0.3s ease;
+    text-decoration: none;
+
+}
+
+/* Background colors for each platform */
+.github { background-color: #6e5494; } /* GitHub */
+.linkedin { background-color: #0077b5; } /* LinkedIn */
+.instagram { background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); } /* Instagram */
+.twitter { background-color: #1DA1F2; } /* Twitter */
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
