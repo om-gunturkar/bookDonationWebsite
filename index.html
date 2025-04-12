@@ -80,9 +80,10 @@
         <div class="form-section">
             <h2>“Donate Books & Share Knowledge.”</h2>
             <form action="donateBook.php" method="POST">
-                <input type="text" placeholder="Enter Book Name" class="input-field" required>
-                <input type="text" placeholder="Author’s Name" class="input-field" required>
-                <div class="radio-group" >
+                <input type="text" name="book_name" placeholder="Enter Book Name" class="input-field" required>
+                <input type="text" name="author_name" placeholder="Author’s Name" class="input-field" required>
+                
+                <div class="radio-group">
                     <label>
                         <input type="radio" name="book-type" value="technical"> 
                         <span class="radio-label">Technical</span>
@@ -92,13 +93,16 @@
                         <span class="radio-label">Non-Technical</span>
                     </label>
                 </div>
-                <input type="text" placeholder="Year" class="input-field">
-                <input type="text" placeholder="Subject" class="input-field">
-                <input type="text" placeholder="Publication" class="input-field" required>
-                <textarea placeholder="Description" class="description-field"></textarea>
+        
+                <input type="text" name="year" placeholder="Year" class="input-field">
+                <input type="text" name="subject" placeholder="Subject" class="input-field">
+                <input type="text" name="publication" placeholder="Publication" class="input-field" required>
+                <textarea name="description" placeholder="Description" class="description-field"></textarea>
+                
                 <button type="submit" class="submit-button">Donate Now !</button>
             </form>
         </div>
+        
     </div>
     <div class="contact-page">
         <div class="contact-container">
