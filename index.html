@@ -18,32 +18,47 @@
             <img src="Assets\TCOER logo.webp" alt="Trinity Logo" class="logo">
             <h1>Trinity College of Engineering and Research, Pune</h1>
         </div>
-        
     </header>
-    <hr class="hr_line">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Donate</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     
-    <main>
+    <main id="home" class="page-section">
         <div class="content">
-            <img src="Assets\TCOER.jpg" alt="College Building" class="college-img">
+            <!-- Image with floating animation -->
+            <div class="image-container">
+                <img src="Assets\TCOER.jpg" alt="College Building" class="college-img">
+                <div class="image-overlay"></div>
+            </div>
+            
+            <!-- Text content with animated reveal -->
             <div class="text-box">
-                <p><strong>Knowledge shared is knowledge multiplied.</strong></p>
-                <p>May these books inspire innovation, fuel curiosity, and empower future engineers to build a better world.</p>
+                <div class="quote-container">
+                    <p class="main-quote animate-text"><strong>Knowledge shared is knowledge multiplied.</strong></p>
+                    <p class="sub-quote animate-text">May these books inspire innovation, fuel curiosity, and empower future engineers to build a better world.</p>
+                </div>
+                
+                <!-- Animated CTA button -->
+                <div class="cta-button animate-button">
+                    <a href="#" class="donate-cta">
+                        <span>Donate Books Today</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </main>
 
     <!-- About Page -->
-    <section class="about-container">
+    <section class="about-container page-section" id="about">
         <h1 class="fade-in">About College :</h1>
 
         <div class="content-box">
